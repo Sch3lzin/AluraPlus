@@ -1,11 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-    //colors
-    --color-principal: #FFFFFF;
-    --color-secudaria: #000000;
-    --color-tercearia: #167BF7;
+    /* colors */
+    --color-font-01: #fff;
+    --color-font-02: #c0c0c0;
+    --color-button-01: #167BF7;
+    --color-button-02: #fff;
+    --color-button-hover-01: #1260be;
+    --color-button-hover-02: #2b2b2b;
+    --color-background: #000;
 
-    // Font
-    --font-principal:"Inter", sans-serif;
+    /* fonts */
+    --font-01: "Inter", sans-serif;
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+.assinatura {
+    background-image: url("/assets/Background.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.assinatura__conteudo {
+    width: 37%;
+    margin-left: 54px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px
+}
+
+.assinatura__conteudo__titulo {
+    color: var(--color-font-01);
+    font-family: var(--font-01);
+    font-weight: 700;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.assinatura__conteudo__imagem {
+    width: 60%;
+}
+
+.assinatura__conteudo__butao {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 16px;
+}
+
+.assinatura__conteudo__butao__link {
+    text-align: center;
+    font-family: var(--font-01);
+    color: var(--color-font-01);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.link__01 {
+    background-color: var(--color-button-01);
+}
+
+.link__01:hover {
+    background-color: var(--color-button-hover-01);
+}
+
+.link__02 {
+    border: 1px solid var(--color-button-02);
+}
+
+.link__02:hover {
+    background-color: var(--color-button-hover-02);
+}
+
+.assinatura__conteudo__variar {
+    color: var(--color-font-02);
+    font-family: var(--font-01);
+    font-weight: 400;
+    font-size: 0.75rem;
 }
