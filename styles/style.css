@@ -163,3 +163,37 @@ body {
     font-size: 2rem;
     text-align: center;
 }
+
+.rodape {
+    margin: 130px 10%;
+    text-align: center;
+}
+
+.rodape__link {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.rodape__link a {
+    color: var(--color-font-01);
+    font-family: var(--font-01);
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+.rodape__link a:hover {
+    text-decoration: underline;
+}
+
+.rodape p {
+    color: var(--color-font-02);
+    font-family: var(--font-01);
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
